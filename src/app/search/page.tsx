@@ -3,6 +3,8 @@ import { SearchBar } from "@/components/search-bar";
 import { PracticeCard } from "@/components/practice-card";
 import { searchPractices, getAllPractices } from "@/lib/notion";
 
+export const dynamic = "force-dynamic";
+
 async function SearchResults({ query }: { query: string }) {
   const practices = query
     ? await searchPractices(query)

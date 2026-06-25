@@ -4,6 +4,8 @@ import { CategoryCard } from "@/components/category-card";
 import { PracticeCard } from "@/components/practice-card";
 import { getCategories, getAllPractices } from "@/lib/notion";
 
+export const dynamic = "force-dynamic";
+
 async function Categories() {
   const categories = await getCategories();
   return (
